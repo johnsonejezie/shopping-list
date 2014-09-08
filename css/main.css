@@ -3,10 +3,9 @@
 ************************************/
 
 body {
-	background: url("../img/elegant.jpg") no-repeat center center fixed;
+	background: url("../img/b2.jpg") no-repeat center center fixed;
 	background-size: cover;
 	background-attachment: scroll;
-	/*background: red;*/
 	opacity: 0.9;
 	font-weight: bold;
 

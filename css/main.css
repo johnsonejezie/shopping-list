@@ -1,0 +1,45 @@
+/************************************
+		GENERAL
+************************************/
+
+body {
+	background: url("../img/elegant.jpg") no-repeat center center fixed;
+	background-size: cover;
+	background-attachment: scroll;
+	/*background: red;*/
+	opacity: 0.9;
+	
+
+	font-family: Abel, "Shadow into light", cursive, "Indie Flower", Lora, "PT Sans Narrow", "Open Sans Condessed", "san-serif";
+}
+.wrapper {
+	width: 80%;
+	margin: 0 5%;
+	text-align: center;
+	padding: 30px;
+}
+
+#submit {
+	margin-top: 5px;
+	margin-left: 50px;
+}
+
+table {
+	margin-top: 20px;
+}
+
+tr {
+	padding: 20px;
+}
+
+th {
+	padding: 10px;
+}
+
+caption {
+	font-size: 32px;
+	text-decoration: underline;
+}
+table {
+	margin-left: 10%;
+}

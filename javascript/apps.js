@@ -1,10 +1,22 @@
-// when you click on add button it will store the input value into
+var myShop = {
+	
 
-$(document).ready(function() {
 
-	$("#userInput").submit(function (event) {
+	init : function() {
 
-		$('#userInput').validate();
+		myShop.inputCheck();
+		myShop.checkBox();
+		myShop.removeItem();
+	
+	},
+	 
+
+
+
+
+	 inputCheck: function() {
+
+	 	$("#userInput").submit(function (event) {
 
 		event.preventDefault();
 
@@ -14,18 +26,20 @@ $(document).ready(function() {
 		}
 		else{
 
-		var goods = $('#item').val();
+			var goods = $('#item').val();
 
 
-	   	$("#data").append("<tr>"+"<td>"+'<input type="checkbox" value="1" id="checkbox">'+
+	   		$("#data").append("<tr>"+"<td>"+'<input type="checkbox" value="1" id="checkbox">'+
 	   		"</td>"+"<td>"+goods+ "</td>"+ "<td>"+'<button>Remove</button>'+"</td>" + "</tr>");
    	}
   	 		userInput.reset();
 	});
+	},
 
 
 
-	$(".tableList").on("change", "input[type=checkbox]", function(){
+	checkBox : function() { 
+		$(".tableList").on("change", "input[type=checkbox]", function(){
 			if ($(this).is(':checked')){
 				$(this).parent().parent().appendTo(".purchased");
 			}
@@ -34,7 +48,12 @@ $(document).ready(function() {
 			}
 	});
 
-	$(".tableList").on("click", "button", function(){
+	},
+
+
+
+	removeItem : function() { 
+		$(".tableList").on("click", "button", function(){
 				
 			var item = $(this).parent().next().text();
 				$("#item").val(item);
@@ -42,5 +61,7 @@ $(document).ready(function() {
 			$(this).parent().parent().remove();
 
 	});
+	}
+};
 
-});
+$(document).ready(myShop.init);

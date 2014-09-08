@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Easy Shopping</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,400italic|Open+Sans+Condensed:300|PT+Sans+Narrow|Lora:400,400italic,700italic|Merriweather:400,300|Indie+Flower|Shadows+Into+Light|Abel&subset=latin,greek-ext,cyrillic-ext' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalise.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="description">
+				<h1>Welcome to Easy Shopping</h1>
+				<p>Please type in the item you want and click on Add to Cart</p>
+				<p>The item will be added to your cart list</p>
+				<p>To purchase the item, check the checkbox beside the item. the item will be added to your purchase list</p>
+				<p>Please use the remove button to delete an item</p> 
+			</div>	
+				<form id="userInput">
+					<label for="item">Items :</label>	
+					<input  type="text" name="item" id="item" size="25" class="required" minlength="2">
+					<input type="submit" value="Add to Cart" id="submit">	
+			</form>
+			<div class="warning"></div>
+			<div class="tableList">
+				<table id="list" class="transaction">
+					<thead>
+						<caption>Cart List</caption>
+						<tr>
+							<th>Transaction</th>
+							<th>Items</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody id="data" class="cart">
+					</tbody>
+				</table>
+				<table id="checked" class="transaction">
+					<caption>Purchase List</caption>
+					<thead>
+						<tr>
+							<th>Transaction</th>
+							<th>Items</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody id="data" class="purchased">
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script src="javascript/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascript/app.js" type="text/javascript" charset="utf-8"></script>	
+				<script src="javascript/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

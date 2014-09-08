@@ -1,0 +1,26 @@
+@media screen and (min-width: 480px) {
+	 .transaction {
+	 	width: 40%;
+	 	float: left;
+	 }
+
+	 #item {
+	 	width: 250px;
+	 }
+
+	 #submit {
+	/*margin-top: 5px;*/
+	margin-left: 5px;
+}
+
+
+tr {
+	padding: 5px;
+}
+
+th {
+	padding: 5px;
+}
+
+
+}

@@ -8,7 +8,7 @@ body {
 	background-attachment: scroll;
 	/*background: red;*/
 	opacity: 0.9;
-	
+	font-weight: bold;
 
 	font-family: Abel, "Shadow into light", cursive, "Indie Flower", Lora, "PT Sans Narrow", "Open Sans Condessed", "san-serif";
 }
